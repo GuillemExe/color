@@ -1,0 +1,14 @@
+<?php
+
+/** @var \Illuminate\Database\Eloquent\Factory $factory */
+
+use App\Color;
+use Faker\Generator as Faker;
+
+$factory->define(Color::class, function (Faker $faker) {
+    return [
+        'nomColor' => $faker->name,
+        'nomColorHexadecimal' => $faker->name,
+        'nomColorCastella' => $faker->name,
+    ];
+});
